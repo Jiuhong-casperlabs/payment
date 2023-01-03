@@ -1,0 +1,34 @@
+[package]
+name = "contract"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+casper-contract = "1.4.3"
+casper-types = "1.4.6"
+
+[[bin]]
+name = "contract"
+path = "src/main.rs"
+bench = false
+doctest = false
+test = false
+
+[[bin]]
+name = "contract1"
+path = "src/main1.rs"
+bench = false
+doctest = false
+test = false
+
+[[bin]]
+name = "contract2"
+path = "src/main2.rs"
+bench = false
+doctest = false
+test = false
+
+[profile.release]
+codegen-units = 1
+lto = true
+
