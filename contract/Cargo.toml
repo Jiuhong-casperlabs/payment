@@ -22,8 +22,8 @@ doctest = false
 test = false
 
 [[bin]]
-name = "contract2"
-path = "src/main2.rs"
+name = "prepare"
+path = "src/prepare.rs"
 bench = false
 doctest = false
 test = false

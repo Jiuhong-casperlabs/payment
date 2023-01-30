@@ -4,8 +4,8 @@ prepare:
 build-contract:
 	cd contract && cargo build --release --target wasm32-unknown-unknown
 	wasm-strip contract/target/wasm32-unknown-unknown/release/contract.wasm 2>/dev/null | true
+	wasm-strip contract/target/wasm32-unknown-unknown/release/prepare.wasm 2>/dev/null | true
 	wasm-strip contract/target/wasm32-unknown-unknown/release/contract1.wasm 2>/dev/null | true
-	wasm-strip contract/target/wasm32-unknown-unknown/release/contract2.wasm 2>/dev/null | true
 
 clippy:
 	cd contract && cargo clippy --all-targets -- -D warnings
