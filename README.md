@@ -11,4 +11,4 @@ You can specify payment-path and payment-arg rather than payment-amount for put-
 ```
 
 
-Entire command see [note](./note)
+Entire command see [note](./note.md)
